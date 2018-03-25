@@ -24,9 +24,14 @@ executable web-practice-x20180324-exe
   main-is:             Main.hs
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5
+                      , web-practice-x20180324
+
+executable web-practice-x20180324-service
+  hs-source-dirs:      app
+  main-is:             Service.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
                       , scotty
-                      , ghc-mod
-                      , hspec
                       , web-practice-x20180324
 
 test-suite tests
